@@ -8,3 +8,11 @@ initial setup steps :
 7) git remote set-url origin https://Prerna-Goel:@github.com/Prerna-Goel/property-management.git (only first time)
 8) git branch -M main
 9) git push -u origin main
+
+for later commits (adding new file):
+git pull (tells if anything left to commit)
+git add .
+git status
+git add github-setup-commands.txt
+git commit -m "added new commands file"
+git push

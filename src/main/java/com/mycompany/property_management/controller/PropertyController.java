@@ -17,6 +17,9 @@ public class PropertyController {
     @Value("${pms.dummy}")
     private String dummy;
 
+    @Value("${spring.database.url:}")
+    private String surl;
+
     @Autowired
     private PropertyService propertyService;
 
@@ -38,6 +41,7 @@ public class PropertyController {
     public ResponseEntity<List<PropertyDTO>> getAllProperties()
     {
         System.out.println(dummy);
+        System.out.println(surl);
         List<PropertyDTO> propertyList = propertyService.getAllProperties();
         ResponseEntity<List<PropertyDTO>> re = new ResponseEntity<>(propertyList, HttpStatus.OK);
         return re;

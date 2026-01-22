@@ -1,0 +1,10 @@
+steps:
+1) git init
+2) git add .
+3) git config user.name "Prerna-Goel" (only first time)
+4) git config user.email "prerna.goel181@gmail.com" (only first time)
+5) git commit -m "initial commit"
+6) git remote add origin https://github.com/Prerna-Goel/property-management.git
+7) git remote set-url origin https://Prerna-Goel:@github.com/Prerna-Goel/property-management.git (only first time)
+8) git branch -M main
+9) git push -u origin main

@@ -31,6 +31,7 @@ public class PropertyConverter {
       //  pdto.setOwnerName(pent.getOwnerName());
         pdto.setDescription(pent.getDescription());
         pdto.setPrice(pent.getPrice());
+        pdto.setUserId(pent.getUserEntity().getId());
 
         return pdto;
     }
